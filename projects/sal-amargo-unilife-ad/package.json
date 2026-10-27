@@ -1,0 +1,10 @@
+{
+  "name": "sal-amargo-unilife-ad",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --offline hyperframes check",
+    "lint": "npx --offline hyperframes lint --verbose",
+    "render": "npx --offline hyperframes render"
+  }
+}

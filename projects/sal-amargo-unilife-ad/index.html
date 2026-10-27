@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sal Amargo Unilife — Escolha Consciente</title>
+    <style>
+      :root {
+        --deep: #071e1b;
+        --mint: #0ab68b;
+        --mint-soft: #bdf3e4;
+        --ivory: #f7f3ea;
+        --ink: #191c1b;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: var(--deep); }
+      body { font-family: Arial, Helvetica, sans-serif; }
+
+      [data-composition-id="sal-amargo-ad"] {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--deep);
+        color: var(--ivory);
+        isolation: isolate;
+      }
+
+      .clip {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .scene-content {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 148px 92px 132px;
+        gap: 28px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        min-height: 52px;
+        padding: 0 22px;
+        border: 1px solid rgba(247, 243, 234, 0.42);
+        border-radius: 999px;
+        background: rgba(7, 30, 27, 0.35);
+        color: var(--ivory);
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        backdrop-filter: blur(14px);
+      }
+
+      .headline {
+        margin: 0;
+        max-width: 900px;
+        color: inherit;
+        font-family: "Arial Black", Arial, sans-serif;
+        font-size: 118px;
+        line-height: 0.91;
+        letter-spacing: -0.065em;
+        text-transform: uppercase;
+      }
+
+      .headline .accent { color: var(--mint-soft); }
+      .subcopy {
+        margin: 0;
+        max-width: 760px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.18;
+        letter-spacing: -0.025em;
+      }
+
+      .micro {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.35;
+        letter-spacing: 0.02em;
+      }
+
+      .grain {
+        position: absolute;
+        inset: -20%;
+        z-index: 2;
+        opacity: 0.17;
+        background-image:
+          radial-gradient(circle at 20% 30%, rgba(255,255,255,.38) 0 1px, transparent 1.4px),
+          radial-gradient(circle at 70% 65%, rgba(255,255,255,.24) 0 1px, transparent 1.5px);
+        background-size: 29px 31px, 37px 41px;
+        transform: rotate(7deg);
+        pointer-events: none;
+      }
+
+      .brand-mark {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+      .brand-dot { width: 15px; height: 15px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 24px rgba(10,182,139,.65); }
+
+      /* Scene 1 */
+      #scene-hook { background: linear-gradient(145deg, #061512 0%, #092b25 55%, #063128 100%); }
+      #scene-hook .scene-content { justify-content: center; }
+      #scene-hook .headline { font-size: 132px; }
+      .hook-rule { width: 168px; height: 12px; border-radius: 99px; background: var(--mint); box-shadow: 0 0 48px rgba(10,182,139,.55); }
+      .agenda-line {
+        position: absolute;
+        left: -120px;
+        width: 1320px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(189,243,228,.38), transparent);
+      }
+      .agenda-line.one { top: 390px; transform: rotate(-8deg); }
+      .agenda-line.two { top: 1030px; transform: rotate(11deg); }
+      .agenda-line.three { top: 1510px; transform: rotate(-5deg); }
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid rgba(189,243,228,.28);
+        box-shadow: inset 0 0 45px rgba(189,243,228,.06), 0 0 50px rgba(10,182,139,.09);
+      }
+      .orb.a { width: 430px; height: 430px; right: -130px; top: 170px; }
+      .orb.b { width: 220px; height: 220px; left: -68px; bottom: 220px; }
+
+      /* Scene 2 */
+      #scene-routine { background: #dfd5c4; color: var(--ink); }
+      .photo-bg { position: absolute; inset: -45px; width: calc(100% + 90px); height: calc(100% + 90px); object-fit: cover; }
+      .photo-wash { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(247,243,234,.14) 0%, rgba(247,243,234,.06) 46%, rgba(7,30,27,.56) 100%); }
+      #scene-routine .scene-content { justify-content: flex-start; padding-top: 154px; }
+      #scene-routine .headline { max-width: 850px; font-size: 105px; color: var(--deep); }
+      #scene-routine .eyebrow { color: var(--deep); border-color: rgba(7,30,27,.3); background: rgba(247,243,234,.54); }
+      .routine-copy { margin-top: auto; color: var(--ivory); text-shadow: 0 4px 28px rgba(7,30,27,.42); }
+      .water-ring { position: absolute; left: 54px; bottom: 232px; width: 380px; height: 160px; border: 4px solid rgba(189,243,228,.6); border-radius: 50%; transform: rotate(-6deg); filter: blur(.2px); }
+
+      /* Shared product worlds */
+      .mineral-bg { position: absolute; inset: -70px; width: calc(100% + 140px); height: calc(100% + 140px); object-fit: cover; }
+      .mineral-shade { position: absolute; inset: 0; background: radial-gradient(circle at 50% 48%, rgba(247,243,234,.04) 0 34%, rgba(7,30,27,.16) 72%, rgba(7,30,27,.72) 100%); }
+      .packshot { position: absolute; z-index: 5; object-fit: contain; filter: drop-shadow(0 42px 55px rgba(2,21,17,.42)); }
+      .halo { position: absolute; z-index: 3; border-radius: 50%; background: radial-gradient(circle, rgba(247,243,234,.92) 0%, rgba(189,243,228,.42) 38%, rgba(10,182,139,.05) 68%, transparent 72%); }
+      .ring { position: absolute; z-index: 3; border: 2px solid rgba(247,243,234,.58); border-radius: 50%; box-shadow: 0 0 30px rgba(189,243,228,.15); }
+      .bubble { position: absolute; z-index: 3; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); background: radial-gradient(circle at 34% 28%, rgba(255,255,255,.95), rgba(189,243,228,.15) 42%, rgba(10,182,139,.06)); box-shadow: 0 10px 30px rgba(7,30,27,.12); }
+      .bubble.b1 { width: 42px; height: 42px; left: 110px; top: 380px; }
+      .bubble.b2 { width: 72px; height: 72px; right: 88px; top: 690px; }
+      .bubble.b3 { width: 28px; height: 28px; left: 196px; bottom: 330px; }
+      .bubble.b4 { width: 52px; height: 52px; right: 178px; bottom: 210px; }
+
+      /* Scene 3 */
+      #scene-reveal { background: #76c7b1; }
+      #scene-reveal .packshot { width: 860px; height: 860px; left: 110px; top: 470px; }
+      #scene-reveal .halo { width: 940px; height: 940px; left: 70px; top: 420px; }
+      #scene-reveal .ring.one { width: 780px; height: 780px; left: 150px; top: 500px; }
+      #scene-reveal .ring.two { width: 990px; height: 990px; left: 45px; top: 395px; opacity: .5; }
+      #scene-reveal .scene-content { justify-content: space-between; }
+      #scene-reveal .headline { font-size: 112px; color: var(--deep); max-width: 820px; }
+      #scene-reveal .reveal-bottom { margin-top: auto; position: relative; z-index: 8; }
+      #scene-reveal .reveal-bottom .subcopy { color: var(--deep); font-size: 33px; }
+
+      /* Scene 4 */
+      #scene-attributes { background: linear-gradient(160deg, #061b17, #0a3b31 65%, #0b5744); }
+      #scene-attributes .packshot { width: 545px; height: 545px; right: -10px; top: 270px; }
+      #scene-attributes .scene-content { padding-top: 142px; }
+      #scene-attributes .headline { font-size: 91px; max-width: 660px; }
+      .attribute-stack { display: flex; flex-direction: column; gap: 22px; margin-top: auto; margin-bottom: 88px; }
+      .attribute-card { display: flex; align-items: center; gap: 26px; width: 100%; min-height: 145px; padding: 24px 30px; border: 1px solid rgba(189,243,228,.22); border-radius: 30px; background: linear-gradient(110deg, rgba(247,243,234,.12), rgba(189,243,228,.06)); box-shadow: 0 26px 70px rgba(0,0,0,.2); backdrop-filter: blur(18px); }
+      .attribute-icon { flex: 0 0 auto; display: grid; place-items: center; width: 82px; height: 82px; border-radius: 50%; background: var(--mint); color: var(--deep); font-family: "Arial Black", Arial, sans-serif; font-size: 34px; box-shadow: 0 12px 30px rgba(10,182,139,.35); }
+      .attribute-text strong { display: block; font-size: 44px; line-height: 1; letter-spacing: -.035em; text-transform: uppercase; }
+      .attribute-text span { display: block; margin-top: 8px; color: rgba(247,243,234,.82); font-size: 28px; font-weight: 700; }
+
+      /* Scene 5 */
+      #scene-guidance { background: var(--ivory); color: var(--ink); }
+      #scene-guidance .packshot { width: 520px; height: 520px; left: -62px; top: 215px; filter: drop-shadow(0 30px 45px rgba(7,30,27,.2)); }
+      .guidance-glow { position: absolute; width: 670px; height: 670px; left: -170px; top: 140px; border-radius: 50%; background: radial-gradient(circle, rgba(189,243,228,.8), rgba(189,243,228,.1) 62%, transparent 70%); }
+      #scene-guidance .scene-content { align-items: flex-end; padding-top: 166px; }
+      #scene-guidance .eyebrow { color: var(--deep); border-color: rgba(7,30,27,.2); background: rgba(10,182,139,.08); }
+      #scene-guidance .headline { max-width: 620px; font-size: 91px; text-align: right; color: var(--deep); }
+      .checklist { display: flex; flex-direction: column; gap: 18px; width: 100%; margin-top: auto; }
+      .check { display: flex; align-items: center; gap: 22px; min-height: 106px; padding: 18px 24px; border: 1px solid rgba(7,30,27,.1); border-radius: 24px; background: rgba(255,255,255,.72); box-shadow: 0 18px 50px rgba(7,30,27,.07); }
+      .check-dot { display: grid; place-items: center; flex: 0 0 auto; width: 58px; height: 58px; border-radius: 50%; background: var(--mint); color: var(--deep); font-size: 32px; font-weight: 900; }
+      .check span { color: var(--deep); font-size: 30px; font-weight: 800; line-height: 1.1; }
+      .legal { margin-top: 2px; color: rgba(25,28,27,.78); font-size: 28px; font-weight: 700; line-height: 1.32; }
+
+      /* Scene 6 */
+      #scene-cta { background: #76c7b1; }
+      #scene-cta .mineral-shade { background: linear-gradient(180deg, rgba(7,30,27,.36), rgba(7,30,27,.12) 44%, rgba(7,30,27,.72) 100%); }
+      #scene-cta .packshot { width: 845px; height: 845px; left: 118px; top: 470px; }
+      #scene-cta .halo { width: 920px; height: 920px; left: 80px; top: 430px; opacity: .85; }
+      #scene-cta .scene-content { justify-content: space-between; align-items: center; text-align: center; padding-bottom: 105px; }
+      #scene-cta .headline { max-width: 900px; font-size: 98px; color: white; text-shadow: 0 6px 36px rgba(7,30,27,.38); }
+      .cta-zone { display: flex; flex-direction: column; align-items: center; gap: 22px; width: 100%; position: relative; z-index: 8; }
+      .cta-button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 128px; padding: 0 38px 0 48px; border-radius: 999px; background: var(--mint); color: var(--deep); box-shadow: 0 24px 60px rgba(7,30,27,.35), inset 0 1px 0 rgba(255,255,255,.55); font-family: "Arial Black", Arial, sans-serif; font-size: 42px; letter-spacing: -.03em; }
+      .cta-arrow { display: grid; place-items: center; width: 82px; height: 82px; border-radius: 50%; background: var(--deep); color: white; font-size: 46px; }
+      .cta-zone .micro { color: rgba(247,243,234,.86); text-shadow: 0 3px 18px rgba(7,30,27,.5); }
+      .final-vignette { position: absolute; inset: 0; z-index: 10; pointer-events: none; box-shadow: inset 0 0 150px rgba(7,30,27,.35); }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="sal-amargo-ad" data-width="1080" data-height="1920" data-duration="30" data-fps="30">
+      <section id="scene-hook" class="clip" data-start="0" data-duration="2.7" data-track-index="1">
+        <div class="grain"></div>
+        <div class="agenda-line one"></div><div class="agenda-line two"></div><div class="agenda-line three"></div>
+        <div class="orb a"></div><div class="orb b"></div>
+        <div class="scene-content">
+          <div class="brand-mark hook-brand"><span class="brand-dot"></span> Unilife Vitamins</div>
+          <div class="hook-rule"></div>
+          <h1 class="headline hook-title">Rotina <span class="accent">corrida.</span></h1>
+          <p class="subcopy hook-copy">Escolhas demais.</p>
+        </div>
+      </section>
+
+      <section id="scene-routine" class="clip" data-start="2.3" data-duration="3.65" data-track-index="2">
+        <img class="photo-bg" src="assets/lifestyle-bg.png" alt="" />
+        <div class="photo-wash"></div><div class="water-ring"></div>
+        <div class="scene-content">
+          <div class="eyebrow routine-eye" data-layout-allow-overlap>Seu ritual, com clareza</div>
+          <h2 class="headline routine-title" data-layout-allow-overlap>Praticidade faz <span style="color:#087b61">diferença.</span></h2>
+          <p class="subcopy routine-copy">Uma escolha que cabe no ritmo do seu dia.</p>
+        </div>
+      </section>
+
+      <section id="scene-reveal" class="clip" data-start="5.5" data-duration="5.05" data-track-index="3">
+        <img class="mineral-bg reveal-bg" src="assets/mineral-bg.png?scene=reveal" alt="" />
+        <div class="mineral-shade"></div><div class="halo"></div><div class="ring one"></div><div class="ring two"></div>
+        <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span><span class="bubble b4"></span>
+        <img class="packshot reveal-pack" src="assets/product-packshot.png?scene=reveal" alt="Sal Amargo em cápsulas Unilife" />
+        <div class="scene-content">
+          <div class="eyebrow reveal-eye" data-layout-allow-overlap>Conheça</div>
+          <h2 class="headline reveal-title" data-layout-allow-overlap>Sal Amargo <span style="color:#087b61">em cápsulas.</span></h2>
+          <div class="reveal-bottom">
+            <p class="subcopy">Suplemento alimentar</p>
+            <div class="brand-mark" style="color:#071e1b"><span class="brand-dot"></span> Unilife Vitamins</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-attributes" class="clip" data-start="10.12" data-duration="4.75" data-track-index="4">
+        <div class="grain"></div>
+        <img class="packshot attribute-pack" src="assets/product-packshot.png?scene=attributes" alt="Sal Amargo Unilife" />
+        <div class="scene-content">
+          <div class="eyebrow attribute-eye" data-layout-allow-overlap>Conforme o rótulo</div>
+          <h2 class="headline attribute-title" data-layout-allow-overlap>Escolha simples. Informação <span class="accent">clara.</span></h2>
+          <div class="attribute-stack">
+            <div class="attribute-card card-a"><div class="attribute-icon">01</div><div class="attribute-text"><strong>Em cápsulas</strong><span>apresentação prática</span></div></div>
+            <div class="attribute-card card-b"><div class="attribute-icon">V</div><div class="attribute-text"><strong>Vegano</strong><span>informado na embalagem</span></div></div>
+            <div class="attribute-card card-c"><div class="attribute-icon">✓</div><div class="attribute-text"><strong>100% vegetal</strong><span>informado na embalagem</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-guidance" class="clip" data-start="14.4" data-duration="10.35" data-track-index="5">
+        <div class="guidance-glow" data-layout-allow-overflow></div>
+        <img class="packshot guidance-pack" data-layout-allow-overflow src="assets/product-packshot.png?scene=guidance" alt="Sal Amargo Unilife" />
+        <div class="scene-content">
+          <div class="eyebrow guidance-eye" data-layout-allow-overlap>Uso consciente</div>
+          <h2 class="headline guidance-title" data-layout-allow-overlap>Informação vem <span style="color:#087b61">primeiro.</span></h2>
+          <div class="checklist">
+            <div class="check check-a"><div class="check-dot">✓</div><span>Siga o modo de uso da embalagem</span></div>
+            <div class="check check-b"><div class="check-dot">✓</div><span>Consulte a composição e as advertências</span></div>
+            <div class="check check-c"><div class="check-dot">✓</div><span>Busque orientação profissional</span></div>
+            <p class="legal guidance-legal">Leia o rótulo. Em caso de dúvida, procure orientação profissional.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-cta" class="clip" data-start="24.32" data-duration="5.68" data-track-index="6">
+        <img class="mineral-bg cta-bg" src="assets/mineral-bg.png?scene=cta" alt="" />
+        <div class="mineral-shade"></div><div class="halo"></div>
+        <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span><span class="bubble b4"></span>
+        <img class="packshot cta-pack" src="assets/product-packshot.png?scene=cta" alt="Sal Amargo Unilife" />
+        <div class="scene-content">
+          <h2 class="headline cta-title" data-layout-allow-overlap>Escolha <span style="color:#071e1b">consciente.</span></h2>
+          <div class="cta-zone">
+            <div class="cta-button"><span>CLIQUE E SAIBA MAIS</span><span class="cta-arrow">→</span></div>
+            <div class="micro">SAL AMARGO UNILIFE • CONFIRA O RÓTULO</div>
+          </div>
+        </div>
+        <div class="final-vignette"></div>
+      </section>
+
+      <audio id="voice" data-start="0" data-duration="28.965" data-track-index="20" src="narration.wav" data-volume="1"></audio>
+      <audio id="music" data-start="0" data-duration="30" data-track-index="21" src="audio/underscore.wav" data-volume="0.31"></audio>
+      <audio id="sfx" data-start="0" data-duration="30" data-track-index="22" src="audio/sfx.wav" data-volume="0.42"></audio>
+    </div>
+
+    <script src="assets/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.from("#scene-hook", { opacity: 0.72, scale: 1.025, duration: 0.5, ease: "power2.out" }, 0)
+        .from(".hook-brand", { opacity: 0, y: -24, duration: 0.48, ease: "power3.out" }, 0.08)
+        .from(".hook-rule", { scaleX: 0, transformOrigin: "left center", duration: 0.55, ease: "power3.out" }, 0.17)
+        .from(".hook-title", { opacity: 0.72, y: 90, scale: 0.96, duration: 0.68, ease: "power3.out" }, 0.02)
+        .from(".hook-copy", { opacity: 0, y: 48, duration: 0.55, ease: "power3.out" }, 0.72)
+        .from("#scene-hook .orb", { opacity: 0, scale: 0.72, stagger: 0.12, duration: 0.7, ease: "power2.out" }, 0.1)
+        .from("#scene-hook .agenda-line", { opacity: 0, scaleX: 0.3, stagger: 0.08, duration: 0.6, ease: "power2.out" }, 0.15);
+
+      tl.from("#scene-routine", { opacity: 0, scale: 1.045, duration: 0.52, ease: "power2.out" }, 2.3)
+        .from("#scene-routine .photo-bg", { scale: 1.1, x: 26, duration: 3.4, ease: "power1.out" }, 2.3)
+        .from(".routine-eye", { opacity: 0, y: -26, duration: 0.48, ease: "power3.out" }, 2.42)
+        .from(".routine-title", { opacity: 0, y: 68, duration: 0.66, ease: "power3.out" }, 2.55)
+        .from(".routine-copy", { opacity: 0, y: 42, duration: 0.55, ease: "power3.out" }, 3.25)
+        .from(".water-ring", { opacity: 0, scale: 0.62, duration: 0.7, ease: "back.out(1.4)" }, 3.0);
+
+      tl.from("#scene-reveal", { opacity: 0, scale: 1.04, duration: 0.52, ease: "power2.out" }, 5.5)
+        .from("#scene-reveal .reveal-bg", { scale: 1.11, rotation: -1.5, duration: 4.9, ease: "power1.out" }, 5.5)
+        .from("#scene-reveal .halo", { opacity: 0, scale: 0.48, duration: 0.8, ease: "power3.out" }, 5.55)
+        .from("#scene-reveal .ring", { opacity: 0, scale: 0.56, stagger: 0.12, duration: 0.82, ease: "power2.out" }, 5.62)
+        .from(".reveal-pack", { opacity: 0, y: 120, scale: 0.72, rotation: -2.5, duration: 0.92, ease: "back.out(1.25)" }, 5.72)
+        .from(".reveal-eye", { opacity: 0, y: -24, duration: 0.45, ease: "power3.out" }, 5.7)
+        .from(".reveal-title", { opacity: 0, y: 58, duration: 0.65, ease: "power3.out" }, 5.92)
+        .from("#scene-reveal .reveal-bottom", { opacity: 0, y: 38, duration: 0.52, ease: "power3.out" }, 7.15)
+        .from("#scene-reveal .bubble", { opacity: 0, scale: 0.2, y: 60, stagger: 0.09, duration: 0.58, ease: "back.out(1.7)" }, 6.0)
+        .to(".reveal-pack", { y: -18, rotation: 0.8, duration: 3.35, ease: "sine.inOut", overwrite: "auto" }, 6.75);
+
+      tl.from("#scene-attributes", { opacity: 0, scale: 1.03, duration: 0.5, ease: "power2.out" }, 10.12)
+        .from(".attribute-pack", { opacity: 0, x: 90, y: 30, rotation: 4, duration: 0.75, ease: "power3.out" }, 10.24)
+        .from(".attribute-eye", { opacity: 0, y: -24, duration: 0.45, ease: "power3.out" }, 10.23)
+        .from(".attribute-title", { opacity: 0, y: 55, duration: 0.6, ease: "power3.out" }, 10.38)
+        .from(".card-a", { x: -80, rotation: -1.8, duration: 0.48, ease: "power3.out" }, 10.85)
+        .from(".card-b", { x: 80, rotation: 1.6, duration: 0.48, ease: "power3.out" }, 11.75)
+        .from(".card-c", { x: -80, rotation: -1.2, duration: 0.48, ease: "power3.out" }, 12.65);
+
+      tl.from("#scene-guidance", { opacity: 0, scale: 1.025, duration: 0.52, ease: "power2.out" }, 14.4)
+        .from(".guidance-glow", { opacity: 0, scale: 0.62, duration: 0.8, ease: "power2.out" }, 14.46)
+        .from(".guidance-pack", { opacity: 0, x: -85, y: 35, rotation: -4, duration: 0.78, ease: "power3.out" }, 14.5)
+        .from(".guidance-eye", { opacity: 0, y: -22, duration: 0.45, ease: "power3.out" }, 14.55)
+        .from(".guidance-title", { opacity: 0, y: 52, duration: 0.62, ease: "power3.out" }, 14.7)
+        .from(".check-a", { opacity: 0, y: 52, duration: 0.55, ease: "power3.out" }, 17.25)
+        .from(".check-b", { opacity: 0, y: 52, duration: 0.55, ease: "power3.out" }, 19.0)
+        .from(".check-c", { opacity: 0, y: 52, duration: 0.55, ease: "power3.out" }, 20.25)
+        .from(".guidance-legal", { opacity: 0, y: 24, duration: 0.48, ease: "power2.out" }, 20.15)
+        .to(".guidance-pack", { y: -14, rotation: 0.6, duration: 3.0, ease: "sine.inOut" }, 21.0);
+
+      tl.from("#scene-cta", { opacity: 0, scale: 1.045, duration: 0.52, ease: "power2.out" }, 24.32)
+        .from("#scene-cta .cta-bg", { scale: 1.12, rotation: 1.5, duration: 5.5, ease: "power1.out" }, 24.32)
+        .from("#scene-cta .halo", { opacity: 0, scale: 0.55, duration: 0.85, ease: "power3.out" }, 24.38)
+        .from(".cta-pack", { opacity: 0, y: 120, scale: 0.74, rotation: 2.2, duration: 0.9, ease: "back.out(1.2)" }, 24.45)
+        .from(".cta-title", { opacity: 0, y: -56, duration: 0.62, ease: "power3.out" }, 24.5)
+        .from(".cta-zone", { opacity: 0, y: 70, duration: 0.68, ease: "power3.out" }, 25.45)
+        .from("#scene-cta .bubble", { opacity: 0, scale: 0.2, y: 65, stagger: 0.09, duration: 0.55, ease: "back.out(1.7)" }, 24.6)
+        .to(".cta-button", { scale: 1.035, duration: 0.32, ease: "power2.out", yoyo: true, repeat: 3 }, 27.7)
+        .to(".cta-arrow", { x: 8, duration: 0.28, ease: "power2.out", yoyo: true, repeat: 3 }, 27.7)
+        .to("#scene-cta", { opacity: 0, duration: 0.55, ease: "power2.in" }, 29.45);
+
+      window.__timelines["sal-amargo-ad"] = tl;
+    </script>
+  </body>
+</html>
