@@ -1,0 +1,21 @@
+{
+  "preview": {
+    "width": 540,
+    "height": 960,
+    "fps": "30",
+    "crf": 23
+  },
+  "vertical_hd": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30",
+    "crf": 18
+  },
+  "horizontal_4k": {
+    "width": 3840,
+    "height": 2160,
+    "fps": "30",
+    "crf": 18
+  },
+  "note": "4K \u00e9 op\u00e7\u00e3o de exporta\u00e7\u00e3o; n\u00e3o recupera detalhe. Preservar fps racional quando adequado. Sem convers\u00e3o HDR autom\u00e1tica."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "masterpiece-audiovisual-intelligence",
+  "name": "Masterpiece Audiovisual Intelligence",
+  "version": "1.0.0",
+  "language": "pt-BR",
+  "entry_skill": "skills/masterpiece-audiovisual/SKILL.md",
+  "master_prompt": "prompts/PROMPT_MESTRE.md",
+  "knowledge_index": "references/KNOWLEDGE_INDEX.md",
+  "portable": true,
+  "catalog_published": false,
+  "automatic_cross_account_import": false
+}
+

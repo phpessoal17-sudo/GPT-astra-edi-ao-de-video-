@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "basis": [
+    "R02",
+    "R06",
+    "R05"
+  ],
+  "essential": [
+    "mensagem guia montagem",
+    "hierarquia tipográfica",
+    "uma ideia principal por beat",
+    "respiro após composição densa"
+  ],
+  "adaptable": [
+    "paleta",
+    "densidade",
+    "velocidade",
+    "aspecto"
+  ],
+  "contextual": [
+    "comparação antes/depois",
+    "glow",
+    "tracking",
+    "3D"
+  ],
+  "palette_proposed": {
+    "background": "#eeeee8",
+    "ink": "#101010",
+    "accent": "#183c32"
+  },
+  "typography": "DejaVu Sans é substituta operacional, não fonte original identificada",
+  "easing_proposed": "cubic-out 0.65s",
+  "modes": {
+    "fiel": "preservar DNA, sem copiar assets",
+    "premium": "R02, margem e luz suave",
+    "retencao": "ênfases motivadas e respiro",
+    "educacional": "R04, demonstrar detalhe",
+    "marketing": "R06, valor e CTA verdadeiro",
+    "adaptativo": "agente escolhe após entender fala; não há classificador semântico local"
+  },
+  "new_references": [
+    "R09 architectural metaphor and nested hierarchy",
+    "R10 clear explanation and contrast between human and graphic cards"
+  ],
+  "tested_proposal": {
+    "name": "Forma editorial",
+    "palette": [
+      "#eeeae0",
+      "#263234",
+      "#b27539"
+    ],
+    "status": "Tested original study; not user-approved preference",
+    "principles": [
+      "warm material contrast",
+      "one visual concept per beat",
+      "sound cue only with visual purpose",
+      "space for reading"
+    ],
+    "evidence": "../../projects/2026-10-26-premium/deliverables/Forma_estudo_original_FullHD.mp4"
+  }
+}

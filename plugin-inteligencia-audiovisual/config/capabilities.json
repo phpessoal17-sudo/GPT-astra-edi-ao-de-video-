@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "verified": [
+    "FFmpeg/FFprobe inspection, editing, encoding and decode QC",
+    "JSON timeline editing with captions, titles and audio mixing",
+    "conservative Rec.709 mastering",
+    "local Portuguese ASR with Sherpa-ONNX models when cached",
+    "HyperFrames/GSAP 2D motion design and MP4 rendering",
+    "local Kokoro Portuguese TTS when model files are available",
+    "original synthesized music and sound effects",
+    "GitHub delivery through the configured repository"
+  ],
+  "conditional": [
+    "website capture depends on network access",
+    "3D depends on Blender and render budget",
+    "AI image/video generation depends on enabled tools and licensing",
+    "tracking, rotoscoping, stabilization and speech restoration depend on installed models/tools"
+  ],
+  "unsupported_or_unverified": [
+    "automatic human-level aesthetic approval",
+    "perfect stem separation from a mixed track",
+    "automatic import of this package into every account",
+    "persistent learning outside versioned project files"
+  ]
+}
+
