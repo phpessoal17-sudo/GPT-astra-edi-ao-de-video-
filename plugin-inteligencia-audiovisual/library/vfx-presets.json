@@ -1,0 +1,17 @@
+{
+  "version": "1.1.0",
+  "presets": [
+    {"id":"focus_pull","mood":"premium","duration":0.65,"properties":["filter:blur","opacity","scale"],"ease":"sine.inOut","purpose":"mudar assunto com suavidade"},
+    {"id":"circle_iris","mood":"wellness","duration":0.58,"properties":["clip-path:circle","scale"],"ease":"power3.inOut","purpose":"revelar produto ou solução"},
+    {"id":"light_bloom","mood":"luminous","duration":0.48,"properties":["opacity","scale","filter:blur"],"ease":"power2.out","purpose":"marcar virada positiva"},
+    {"id":"editorial_push","mood":"editorial","duration":0.42,"properties":["x","clip-path:inset"],"ease":"power3.inOut","purpose":"avançar para nova informação"},
+    {"id":"data_slam","mood":"confident","duration":0.38,"properties":["scale","y","opacity"],"ease":"back.out(1.35)","purpose":"destacar número verificável"},
+    {"id":"whip_focus","mood":"energetic","duration":0.28,"properties":["x","filter:blur","scale"],"ease":"power4.inOut","purpose":"troca rápida com continuidade direcional"},
+    {"id":"liquid_reveal","mood":"organic","duration":0.72,"properties":["clip-path","border-radius","scale"],"ease":"power2.inOut","purpose":"transição orgânica de wellness"},
+    {"id":"card_cascade","mood":"informative","duration":0.62,"properties":["y","rotation","opacity"],"ease":"expo.out","purpose":"apresentar checklist ou composição"},
+    {"id":"product_float","mood":"premium","duration":1.6,"properties":["y","rotation"],"ease":"sine.inOut","purpose":"manter packshot vivo sem distorção"},
+    {"id":"cta_pulse","mood":"action","duration":0.52,"properties":["scale","box-shadow"],"ease":"sine.inOut","purpose":"reforçar ação final"},
+    {"id":"parallax_depth","mood":"cinematic","duration":1.2,"properties":["x","y","scale"],"ease":"power1.out","purpose":"separar planos e simular câmera"},
+    {"id":"color_dip","mood":"dramatic","duration":0.50,"properties":["backgroundColor","opacity"],"ease":"power2.inOut","purpose":"separar capítulos"}
+  ]
+}

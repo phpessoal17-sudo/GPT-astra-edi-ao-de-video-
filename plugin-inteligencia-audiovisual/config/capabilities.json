@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "verified": [
     "FFmpeg/FFprobe inspection, editing, encoding and decode QC",
     "JSON timeline editing with captions, titles and audio mixing",
@@ -8,6 +8,8 @@
     "HyperFrames/GSAP 2D motion design and MP4 rendering",
     "local Kokoro Portuguese TTS when model files are available",
     "original synthesized music and sound effects",
+    "versioned local library with 15 SFX, 3 background cues and 12 VFX presets",
+    "fast-speech workflow with semantic pause preservation and internal-silence reduction",
     "GitHub delivery through the configured repository"
   ],
   "conditional": [

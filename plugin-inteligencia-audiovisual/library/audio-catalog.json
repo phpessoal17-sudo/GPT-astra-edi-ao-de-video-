@@ -1,0 +1,155 @@
+{
+  "version": "1.1.0",
+  "sample_rate": 48000,
+  "license": "Síntese procedural original, sem samples externos; disponível para os projetos do usuário.",
+  "deterministic_seed": 20261028,
+  "assets": [
+    {
+      "id": "whoosh_soft_air",
+      "path": "library/audio/sfx/whoosh_soft_air.wav",
+      "category": "transition",
+      "mood": "soft",
+      "duration": 0.78,
+      "recommended_use": "focus pull e troca premium"
+    },
+    {
+      "id": "whoosh_fast_tonal",
+      "path": "library/audio/sfx/whoosh_fast_tonal.wav",
+      "category": "transition",
+      "mood": "fast",
+      "duration": 0.34,
+      "recommended_use": "troca rápida ou card"
+    },
+    {
+      "id": "riser_glass",
+      "path": "library/audio/sfx/riser_glass.wav",
+      "category": "riser",
+      "mood": "luminous",
+      "duration": 1.8,
+      "recommended_use": "antecipar revelação"
+    },
+    {
+      "id": "downlifter_warm",
+      "path": "library/audio/sfx/downlifter_warm.wav",
+      "category": "downlifter",
+      "mood": "warm",
+      "duration": 1.1,
+      "recommended_use": "encerrar bloco"
+    },
+    {
+      "id": "impact_cinematic",
+      "path": "library/audio/sfx/impact_cinematic.wav",
+      "category": "impact",
+      "mood": "cinematic",
+      "duration": 1.25,
+      "recommended_use": "revelação principal"
+    },
+    {
+      "id": "impact_soft",
+      "path": "library/audio/sfx/impact_soft.wav",
+      "category": "impact",
+      "mood": "soft",
+      "duration": 0.72,
+      "recommended_use": "mudança informativa"
+    },
+    {
+      "id": "sub_drop",
+      "path": "library/audio/sfx/sub_drop.wav",
+      "category": "sub",
+      "mood": "heavy",
+      "duration": 1.45,
+      "recommended_use": "dar peso sem cobrir a voz"
+    },
+    {
+      "id": "click_glass",
+      "path": "library/audio/sfx/click_glass.wav",
+      "category": "ui",
+      "mood": "clean",
+      "duration": 0.22,
+      "recommended_use": "chips, números e checklists"
+    },
+    {
+      "id": "tick_soft",
+      "path": "library/audio/sfx/tick_soft.wav",
+      "category": "ui",
+      "mood": "soft",
+      "duration": 0.12,
+      "recommended_use": "microinteração"
+    },
+    {
+      "id": "confirm_chime",
+      "path": "library/audio/sfx/confirm_chime.wav",
+      "category": "confirmation",
+      "mood": "positive",
+      "duration": 1.25,
+      "recommended_use": "CTA e confirmação"
+    },
+    {
+      "id": "sparkle_cluster",
+      "path": "library/audio/sfx/sparkle_cluster.wav",
+      "category": "sparkle",
+      "mood": "bright",
+      "duration": 1.45,
+      "recommended_use": "produto e brilho"
+    },
+    {
+      "id": "page_swipe",
+      "path": "library/audio/sfx/page_swipe.wav",
+      "category": "transition",
+      "mood": "editorial",
+      "duration": 0.62,
+      "recommended_use": "virada de página"
+    },
+    {
+      "id": "focus_bloom",
+      "path": "library/audio/sfx/focus_bloom.wav",
+      "category": "transition",
+      "mood": "premium",
+      "duration": 1.0,
+      "recommended_use": "foco e luz"
+    },
+    {
+      "id": "data_pop",
+      "path": "library/audio/sfx/data_pop.wav",
+      "category": "ui",
+      "mood": "confident",
+      "duration": 0.35,
+      "recommended_use": "entrada de dado"
+    },
+    {
+      "id": "transition_iris",
+      "path": "library/audio/sfx/transition_iris.wav",
+      "category": "transition",
+      "mood": "organic",
+      "duration": 0.82,
+      "recommended_use": "íris circular"
+    },
+    {
+      "id": "wellness_luxe_30s",
+      "path": "library/audio/music/wellness_luxe_30s.wav",
+      "category": "background_music",
+      "mood": "warm premium wellness",
+      "duration": 30.0,
+      "bpm": 82,
+      "recommended_use": "anúncio vertical com voz e ducking"
+    },
+    {
+      "id": "editorial_pulse_30s",
+      "path": "library/audio/music/editorial_pulse_30s.wav",
+      "category": "background_music",
+      "mood": "modern editorial information",
+      "duration": 30.0,
+      "bpm": 104,
+      "recommended_use": "anúncio vertical com voz e ducking"
+    },
+    {
+      "id": "cinematic_clarity_30s",
+      "path": "library/audio/music/cinematic_clarity_30s.wav",
+      "category": "background_music",
+      "mood": "cinematic reveal and resolution",
+      "duration": 30.0,
+      "bpm": 76,
+      "recommended_use": "anúncio vertical com voz e ducking"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "meno-care-natural-day-ad-v2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx hyperframes check",
+    "lint": "npx hyperframes lint --verbose",
+    "render": "npx hyperframes render"
+  }
+}

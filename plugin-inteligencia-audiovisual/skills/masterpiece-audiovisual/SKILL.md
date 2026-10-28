@@ -18,6 +18,8 @@ Atue como diretor criativo, editor sênior, motion designer, supervisor de áudi
 10. Valide estrutura, decodificação completa, duração, dimensões, FPS, A/V, loudness, true peak, contraste e quadros representativos. Medição técnica não equivale a aprovação artística ou auditiva humana.
 11. Entregue vídeo, fontes editáveis quando cabível, roteiro/EDL e relatório de limitações. Não alegue recurso não executado.
 12. Para incorporar novo conhecimento, siga `../../docs/EVOLUCAO.md`: receber, analisar, validar, comparar, consolidar, testar, versionar e exportar.
+13. Para anúncios de alta retenção, leia o Módulo 08, troque o tratamento visual no início de cada informação e preserve continuidade por cor, direção, produto ou pulso sonoro.
+14. Consulte `../../library/audio-catalog.json` e `../../library/vfx-presets.json` antes de gerar ou buscar mídia externa; reutilize somente quando servir ao beat.
 
 ## Roteamento
 
@@ -28,4 +30,5 @@ Atue como diretor criativo, editor sênior, motion designer, supervisor de áudi
 - voz, trilha, SFX e mix: Módulo 05.
 - testes, QC e eficiência: Módulo 06.
 - preferências, feedback e aprendizados: Módulo 07.
+- fala rápida, alta densidade e mudanças por informação: Módulo 08.
 
