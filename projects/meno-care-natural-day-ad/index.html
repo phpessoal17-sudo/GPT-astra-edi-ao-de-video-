@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meno Care Natural Day — Clareza em cada escolha</title>
+    <style>
+      :root {
+        --plum: #2a063f;
+        --purple: #5c148c;
+        --orchid: #a446d0;
+        --grapefruit: #ff5b36;
+        --ivory: #fff6e9;
+        --green: #285b3d;
+        --ink: #231a27;
+        --gold: #f6c547;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #2a063f; }
+      body { font-family: Arial, Helvetica, sans-serif; }
+
+      [data-composition-id="meno-care-ad"] {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        isolation: isolate;
+        color: #fff6e9;
+        background: #2a063f;
+      }
+
+      .clip { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+      .scene-content {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 142px 86px 124px;
+        gap: 26px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-start;
+        min-height: 52px;
+        padding: 0 23px;
+        border: 1px solid rgba(255,246,233,.42);
+        border-radius: 999px;
+        background: rgba(42,6,63,.30);
+        color: #fff6e9;
+        font: 800 28px/1 Arial, sans-serif;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        backdrop-filter: blur(14px);
+      }
+
+      .headline {
+        margin: 0;
+        max-width: 900px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 112px;
+        font-weight: 900;
+        line-height: .94;
+        letter-spacing: -.055em;
+      }
+
+      .display-sans {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        letter-spacing: -.065em;
+        text-transform: uppercase;
+      }
+
+      .subcopy {
+        margin: 0;
+        max-width: 780px;
+        font: 700 36px/1.18 Arial, sans-serif;
+        letter-spacing: -.025em;
+      }
+
+      .micro { font: 700 28px/1.35 Arial, sans-serif; letter-spacing: .01em; }
+      .grain {
+        position: absolute;
+        inset: -18%;
+        z-index: 4;
+        opacity: .16;
+        background-image:
+          radial-gradient(circle at 20% 30%, rgba(255,246,233,.42) 0 1px, rgba(255,246,233,0) 1.5px),
+          radial-gradient(circle at 70% 65%, rgba(255,246,233,.22) 0 1px, rgba(255,246,233,0) 1.6px);
+        background-size: 31px 33px, 43px 47px;
+        transform: rotate(8deg);
+        pointer-events: none;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: inherit;
+        font: 900 29px/1 Arial, sans-serif;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+      }
+      .brand-leaf {
+        width: 20px;
+        height: 32px;
+        border-radius: 100% 0 100% 0;
+        background: #ff5b36;
+        transform: rotate(45deg);
+        box-shadow: -13px 10px 0 #285b3d;
+      }
+
+      .packshot {
+        position: absolute;
+        z-index: 8;
+        object-fit: contain;
+        filter: drop-shadow(0 44px 54px rgba(25,4,38,.35));
+      }
+      .halo { position: absolute; z-index: 5; border-radius: 50%; }
+
+      .fruit {
+        position: absolute;
+        z-index: 6;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        background:
+          repeating-conic-gradient(from 2deg, #ffb070 0deg 8deg, #ff6a43 8deg 17deg),
+          #ff5b36;
+        border: 22px solid #fff1db;
+        box-shadow: inset 0 0 0 7px #f8794f, 0 28px 55px rgba(42,6,63,.22);
+      }
+      .fruit::after { content: ""; position: absolute; inset: 48%; border-radius: 50%; background: #fff6e9; }
+      .leaf {
+        position: absolute;
+        z-index: 5;
+        width: 118px;
+        height: 194px;
+        border-radius: 100% 0 100% 0;
+        background: linear-gradient(145deg, #5f9f58, #285b3d 70%);
+        box-shadow: inset 18px -8px 22px rgba(15,63,38,.22);
+      }
+
+      /* 1 — hook */
+      #scene-hook { background: radial-gradient(circle at 74% 24%, #6f2098 0%, #3b0a58 39%, #2a063f 76%); }
+      #scene-hook .scene-content { justify-content: center; }
+      #scene-hook .headline { max-width: 880px; font-size: 131px; }
+      #scene-hook .accent { color: #ffb295; font-style: italic; }
+      .hook-rule { width: 176px; height: 10px; border-radius: 99px; background: #ff5b36; box-shadow: 0 0 46px rgba(255,91,54,.52); }
+      .orbit { position: absolute; z-index: 2; border: 2px solid rgba(255,246,233,.18); border-radius: 50%; }
+      .orbit.o1 { width: 690px; height: 690px; right: -310px; top: 170px; }
+      .orbit.o2 { width: 450px; height: 450px; left: -210px; bottom: 210px; }
+      .glow-slice { position: absolute; z-index: 3; width: 1020px; height: 260px; left: 170px; top: 1250px; border-radius: 50%; background: rgba(255,91,54,.18); filter: blur(70px); transform: rotate(-15deg); }
+
+      /* 2 — context */
+      #scene-context { background: #fff6e9; color: #231a27; }
+      #scene-context .scene-content { justify-content: center; }
+      #scene-context .eyebrow { color: #5c148c; border-color: rgba(92,20,140,.22); background: rgba(164,70,208,.08); }
+      #scene-context .headline { max-width: 850px; font-size: 105px; color: #2a063f; }
+      .info-card {
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 22px 28px;
+        border: 1px solid rgba(92,20,140,.13);
+        border-radius: 26px;
+        background: rgba(255,255,255,.68);
+        box-shadow: 0 26px 70px rgba(42,6,63,.10);
+        color: #5c148c;
+        font: 900 28px/1 Arial, sans-serif;
+        letter-spacing: .02em;
+      }
+      .info-card i { width: 18px; height: 18px; border-radius: 50%; background: #ff5b36; box-shadow: 0 0 0 9px rgba(255,91,54,.12); }
+      .info-card.c1 { right: 45px; top: 290px; transform: rotate(5deg); }
+      .info-card.c2 { left: 42px; bottom: 300px; transform: rotate(-4deg); }
+      .context-fruit { right: -72px; bottom: -48px; transform: rotate(12deg) scale(1.45); opacity: .76; }
+      .context-leaf { right: 110px; bottom: 170px; transform: rotate(46deg); opacity: .75; }
+
+      /* 3 — reveal */
+      #scene-reveal { background: radial-gradient(circle at 50% 48%, #fff8ef 0%, #efd8f5 44%, #8a39b2 100%); color: #2a063f; }
+      #scene-reveal .scene-content { justify-content: space-between; }
+      #scene-reveal .eyebrow { color: #5c148c; border-color: rgba(92,20,140,.22); background: rgba(255,255,255,.42); }
+      #scene-reveal .headline { max-width: 850px; font-size: 108px; }
+      #scene-reveal .packshot { width: 850px; height: 850px; left: 115px; top: 500px; }
+      #scene-reveal .halo { width: 920px; height: 920px; left: 80px; top: 455px; background: radial-gradient(circle, rgba(255,255,255,.98) 0%, rgba(255,246,233,.72) 42%, rgba(164,70,208,.11) 66%, rgba(164,70,208,0) 72%); }
+      .reveal-ring { position: absolute; z-index: 4; width: 890px; height: 890px; left: 95px; top: 470px; border: 2px solid rgba(92,20,140,.28); border-radius: 50%; }
+      #scene-reveal .subcopy { margin-top: auto; color: #2a063f; position: relative; z-index: 12; }
+
+      /* 4 — proof */
+      #scene-proof { background: linear-gradient(150deg, #2a063f 0%, #541080 62%, #7a269f 100%); }
+      #scene-proof .scene-content { padding-top: 132px; }
+      #scene-proof .headline { font-size: 88px; max-width: 780px; }
+      #scene-proof .packshot { width: 515px; height: 515px; right: -60px; top: 315px; }
+      .stat-row { display: flex; align-items: center; gap: 24px; margin-top: 42px; }
+      .stat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 310px;
+        min-height: 248px;
+        padding: 28px 30px;
+        border: 1px solid rgba(255,246,233,.22);
+        border-radius: 36px;
+        background: rgba(255,255,255,.10);
+        box-shadow: 0 28px 70px rgba(18,2,28,.23);
+        backdrop-filter: blur(18px);
+      }
+      .stat strong { color: #ffb295; font: 900 110px/.86 Arial, sans-serif; letter-spacing: -.08em; font-variant-numeric: tabular-nums; }
+      .stat span { margin-top: 18px; font: 900 29px/1 Arial, sans-serif; letter-spacing: .05em; text-transform: uppercase; }
+      .plus { color: #f6c547; font: 900 66px/1 Arial, sans-serif; }
+      .chips { display: flex; flex-wrap: wrap; gap: 18px; margin-top: auto; }
+      .chip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 112px;
+        height: 72px;
+        padding: 0 26px;
+        border-radius: 999px;
+        background: #fff6e9;
+        color: #5c148c;
+        box-shadow: 0 16px 38px rgba(23,2,35,.22);
+        font: 900 29px/1 Arial, sans-serif;
+      }
+      .label-proof { color: rgba(255,246,233,.82); font: 700 28px/1.3 Arial, sans-serif; }
+
+      /* 5 — guidance */
+      #scene-guidance { background: #fff6e9; color: #231a27; }
+      #scene-guidance .scene-content { padding-top: 145px; }
+      #scene-guidance .eyebrow { color: #5c148c; border-color: rgba(92,20,140,.2); background: rgba(164,70,208,.08); }
+      #scene-guidance .headline { color: #2a063f; max-width: 860px; font-size: 95px; }
+      #scene-guidance .packshot { width: 430px; height: 430px; right: -46px; top: 205px; filter: drop-shadow(0 30px 42px rgba(42,6,63,.18)); }
+      .guide-list { display: flex; flex-direction: column; gap: 20px; margin-top: auto; }
+      .guide-item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        min-height: 118px;
+        padding: 19px 26px;
+        border: 1px solid rgba(92,20,140,.12);
+        border-radius: 28px;
+        background: rgba(255,255,255,.72);
+        box-shadow: 0 20px 52px rgba(42,6,63,.07);
+      }
+      .guide-index { display: grid; place-items: center; flex: 0 0 auto; width: 62px; height: 62px; border-radius: 50%; background: #5c148c; color: #fff6e9; font: 900 29px/1 Arial, sans-serif; }
+      .guide-item span:last-child { color: #2a063f; font: 800 29px/1.15 Arial, sans-serif; }
+      .guidance-note { color: rgba(42,6,63,.78); font: 700 28px/1.34 Arial, sans-serif; }
+      .guidance-orb { position: absolute; left: -210px; bottom: -250px; width: 620px; height: 620px; border-radius: 50%; background: radial-gradient(circle, rgba(255,91,54,.22), rgba(255,91,54,0) 70%); }
+
+      /* 6 — CTA */
+      #scene-cta { background: radial-gradient(circle at 50% 45%, #7d2baa 0%, #4d0e72 48%, #2a063f 100%); }
+      #scene-cta .scene-content { align-items: center; justify-content: flex-start; text-align: center; padding-bottom: 92px; }
+      #scene-cta .headline { position: absolute; top: 235px; left: 90px; width: 900px; max-width: 900px; font-size: 91px; }
+      #scene-cta .packshot { width: 800px; height: 800px; left: 140px; top: 500px; }
+      #scene-cta .halo { width: 875px; height: 875px; left: 103px; top: 463px; background: radial-gradient(circle, rgba(255,255,255,.98) 0%, rgba(255,246,233,.66) 40%, rgba(255,91,54,.14) 66%, rgba(255,91,54,0) 72%); }
+      .cta-fruit { width: 230px; height: 230px; right: -45px; top: 690px; transform: rotate(14deg); }
+      .cta-leaf { left: -30px; top: 790px; transform: rotate(-38deg) scale(1.2); }
+      .cta-zone { display: flex; flex-direction: column; align-items: center; gap: 18px; width: 100%; margin-top: auto; position: relative; z-index: 13; }
+      .cta-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 126px;
+        padding: 0 30px 0 44px;
+        border-radius: 999px;
+        background: #ffb295;
+        color: #2a063f;
+        box-shadow: 0 26px 65px rgba(20,2,31,.38), inset 0 1px 0 rgba(255,255,255,.55);
+        font: 900 37px/1 Arial, sans-serif;
+        letter-spacing: -.035em;
+      }
+      .cta-arrow { display: grid; place-items: center; width: 82px; height: 82px; border-radius: 50%; background: #2a063f; color: #fff6e9; font: 900 43px/1 Arial, sans-serif; }
+      .cta-zone .micro { color: rgba(255,246,233,.82); text-shadow: 0 3px 18px rgba(20,2,31,.45); }
+      .final-vignette { position: absolute; inset: 0; z-index: 20; pointer-events: none; box-shadow: inset 0 0 160px rgba(23,2,35,.38); }
+    </style>
+  </head>
+  <body>
+    <div data-composition-id="meno-care-ad" data-width="1080" data-height="1920" data-duration="30" data-fps="30">
+      <section id="scene-hook" class="clip" data-start="0" data-duration="3.4" data-track-index="1">
+        <div class="grain" data-layout-ignore></div><div class="orbit o1" data-layout-ignore></div><div class="orbit o2" data-layout-ignore></div><div class="glow-slice" data-layout-ignore></div>
+        <div class="scene-content">
+          <div class="brand hook-brand"><span class="brand-leaf"></span> Natural Day</div>
+          <div class="hook-rule"></div>
+          <h1 class="headline hook-title">Sua rotina <span class="accent">muda.</span></h1>
+          <p class="subcopy hook-copy">E o cuidado com você merece acompanhar.</p>
+        </div>
+      </section>
+
+      <section id="scene-context" class="clip" data-start="3" data-duration="4.4" data-track-index="2">
+        <div class="info-card c1"><i></i> Tanta informação</div><div class="info-card c2"><i></i> Uma escolha consciente</div>
+        <div class="fruit context-fruit" data-layout-ignore></div><div class="leaf context-leaf" data-layout-ignore></div>
+        <div class="scene-content">
+          <div class="eyebrow context-eye">Clareza faz diferença</div>
+          <h2 class="headline context-title">Escolher bem começa por <span style="color:#5c148c">entender.</span></h2>
+          <p class="subcopy context-copy">Informação legível. Decisão consciente.</p>
+        </div>
+      </section>
+
+      <section id="scene-reveal" class="clip" data-start="7" data-duration="5.2" data-track-index="3">
+        <div class="halo" data-layout-ignore></div><div class="reveal-ring" data-layout-ignore></div>
+        <img class="packshot reveal-pack" src="assets/product-packshot.png?scene=reveal" alt="Meno Care Natural Day" />
+        <div class="scene-content">
+          <div class="eyebrow reveal-eye">Apresentamos</div>
+          <h2 class="headline reveal-title">Meno <span style="color:#5c148c">Care.</span></h2>
+          <p class="subcopy reveal-copy">Suplemento alimentar em cápsulas.</p>
+        </div>
+      </section>
+
+      <section id="scene-proof" class="clip" data-start="11.8" data-duration="6.7" data-track-index="4">
+        <img class="packshot proof-pack" data-layout-allow-overflow src="assets/product-packshot.png?scene=proof" alt="Meno Care Natural Day" />
+        <div class="grain" data-layout-ignore></div>
+        <div class="scene-content">
+          <div class="eyebrow proof-eye" data-layout-allow-overlap>Conforme o rótulo</div>
+          <h2 class="headline display-sans proof-title">Informação em destaque.</h2>
+          <div class="stat-row">
+            <div class="stat stat-a"><strong>13</strong><span>vitaminas</span></div>
+            <div class="plus">+</div>
+            <div class="stat stat-b"><strong>9</strong><span>minerais</span></div>
+          </div>
+          <div class="chips"><div class="chip chip-a">A</div><div class="chip chip-c">C</div><div class="chip chip-z">Zinco</div><div class="chip chip-q">60 cáps.</div></div>
+          <div class="label-proof">Dados visíveis na embalagem apresentada.</div>
+        </div>
+      </section>
+
+      <section id="scene-guidance" class="clip" data-start="18.1" data-duration="6.5" data-track-index="5">
+        <div class="guidance-orb" data-layout-ignore></div>
+        <img class="packshot guide-pack" data-layout-allow-overflow src="assets/product-packshot.png?scene=guidance" alt="Meno Care Natural Day" />
+        <div class="scene-content">
+          <div class="eyebrow guide-eye" data-layout-allow-overlap>Escolha consciente</div>
+          <h2 class="headline guide-title">Leia. Confira. <span style="color:#5c148c">Escolha.</span></h2>
+          <div class="guide-list" data-hold>
+            <div class="guide-item guide-1"><span class="guide-index">01</span><span>Tabela nutricional e composição</span></div>
+            <div class="guide-item guide-2"><span class="guide-index">02</span><span>Modo de uso e advertências</span></div>
+            <div class="guide-item guide-3"><span class="guide-index">03</span><span>Orientação profissional quando necessário</span></div>
+          </div>
+          <div class="guidance-note">Consulte as informações completas da embalagem antes de usar.</div>
+        </div>
+      </section>
+
+      <section id="scene-cta" class="clip" data-start="24.2" data-duration="5.8" data-track-index="6">
+        <div class="grain" data-layout-ignore></div><div class="halo" data-layout-ignore></div>
+        <div class="fruit cta-fruit" data-layout-ignore></div><div class="leaf cta-leaf" data-layout-ignore></div>
+        <img class="packshot cta-pack" src="assets/product-packshot.png?scene=cta" alt="Meno Care Natural Day" />
+        <div class="scene-content">
+          <div class="brand cta-brand"><span class="brand-leaf"></span> Natural Day</div>
+          <h2 class="headline cta-title">Cuidado começa pela <span style="color:#ffd8ca;font-style:italic">informação.</span></h2>
+          <div class="cta-zone">
+            <div class="cta-button"><span>CONHEÇA OS DETALHES</span><span class="cta-arrow">→</span></div>
+            <div class="micro">Meno Care · suplemento alimentar em cápsulas</div>
+          </div>
+        </div>
+        <div class="final-vignette"></div>
+      </section>
+
+      <audio id="narration" data-start="0.12" data-duration="28.773" data-track-index="20" src="narration.wav" data-volume="1"></audio>
+      <audio id="underscore" data-start="0" data-duration="30" data-track-index="21" src="audio/underscore.wav" data-volume="0.30"></audio>
+      <audio id="sfx" data-start="0" data-duration="30" data-track-index="22" src="audio/sfx.wav" data-volume="0.62"></audio>
+
+      <script src="assets/gsap.min.js"></script>
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Hook: editorial, direto e com variação de peso.
+        tl.from(".hook-brand", { x: -54, duration: 0.58, ease: "power3.out" }, 0.20);
+        tl.from(".hook-rule", { scaleX: 0, transformOrigin: "left center", duration: 0.52, ease: "expo.out" }, 0.38);
+        tl.from(".hook-title", { y: 82, opacity: 0, duration: 0.82, ease: "power4.out" }, 0.50);
+        tl.from(".hook-copy", { y: 34, opacity: 0, duration: 0.62, ease: "power2.out" }, 0.86);
+        tl.from(".o1", { scale: 0.72, rotation: -18, duration: 3.0, ease: "sine.out" }, 0.15);
+        tl.from(".o2", { scale: 1.30, rotation: 14, duration: 2.8, ease: "power1.out" }, 0.24);
+
+        // Íris clara cobre o hook e inicia a progressão.
+        tl.from("#scene-context", { clipPath: "circle(0% at 86% 20%)", duration: 0.72, ease: "power3.inOut" }, 3.0);
+        tl.from(".context-eye", { x: -62, opacity: 0, duration: 0.52, ease: "expo.out" }, 3.20);
+        tl.from(".context-title", { scale: 0.94, opacity: 0, transformOrigin: "left center", duration: 0.72, ease: "back.out(1.25)" }, 3.34);
+        tl.from(".context-copy", { y: 48, opacity: 0, duration: 0.56, ease: "power2.out" }, 3.74);
+        tl.from(".info-card.c1", { x: 210, rotation: 16, opacity: 0, duration: 0.82, ease: "power4.out" }, 3.18);
+        tl.from(".info-card.c2", { x: -210, rotation: -15, opacity: 0, duration: 0.82, ease: "power3.out" }, 3.54);
+        tl.from(".context-fruit", { scale: 0.2, rotation: -70, opacity: 0, duration: 1.1, ease: "back.out(1.35)" }, 4.15);
+        tl.from(".context-leaf", { y: 130, rotation: 10, opacity: 0, duration: 0.88, ease: "power2.out" }, 4.35);
+
+        // Reveal: foco suave, halo e produto heroico.
+        tl.from("#scene-reveal", { opacity: 0, filter: "blur(28px)", duration: 0.75, ease: "sine.inOut" }, 7.0);
+        tl.from("#scene-reveal .halo", { scale: 0.42, opacity: 0, duration: 1.0, ease: "power2.out" }, 7.12);
+        tl.from(".reveal-ring", { scale: 1.28, opacity: 0, duration: 1.2, ease: "sine.out" }, 7.18);
+        tl.from(".reveal-pack", { y: 150, scale: 0.78, rotation: -4, opacity: 0, duration: 1.05, ease: "back.out(1.2)" }, 7.26);
+        tl.from(".reveal-eye", { x: 62, opacity: 0, duration: 0.55, ease: "power3.out" }, 7.34);
+        tl.from(".reveal-title", { y: -58, opacity: 0, duration: 0.72, ease: "expo.out" }, 7.47);
+        tl.from(".reveal-copy", { y: 44, opacity: 0, duration: 0.58, ease: "power2.out" }, 8.15);
+        tl.to(".reveal-pack", { y: -22, duration: 1.65, repeat: 1, yoyo: true, ease: "sine.inOut" }, 8.48);
+
+        // Prova: entrada diagonal e dados com leitura em sequência.
+        tl.from("#scene-proof", { clipPath: "inset(100% 0 0 0)", duration: 0.58, ease: "power3.inOut" }, 11.8);
+        tl.from(".proof-eye", { y: -42, opacity: 0, duration: 0.50, ease: "power2.out" }, 11.90);
+        tl.from(".proof-title", { x: -80, opacity: 0, duration: 0.66, ease: "expo.out" }, 11.98);
+        tl.from(".proof-pack", { x: 170, scale: 0.84, rotation: 5, opacity: 0, duration: 0.95, ease: "back.out(1.25)" }, 12.00);
+        tl.from(".stat-a", { y: 85, scale: 0.88, opacity: 0, duration: 0.64, ease: "power4.out" }, 12.44);
+        tl.from(".plus", { scale: 0, rotation: -45, opacity: 0, duration: 0.46, ease: "back.out(1.7)" }, 12.76);
+        tl.from(".stat-b", { y: -72, scale: 0.90, opacity: 0, duration: 0.66, ease: "power3.out" }, 12.92);
+        tl.from(".chip-a", { x: -55, opacity: 0, duration: 0.40, ease: "expo.out" }, 13.68);
+        tl.from(".chip-c", { y: 48, opacity: 0, duration: 0.42, ease: "power2.out" }, 13.84);
+        tl.from(".chip-z", { scale: 0.72, opacity: 0, duration: 0.48, ease: "back.out(1.4)" }, 14.00);
+        tl.from(".chip-q", { x: 70, opacity: 0, duration: 0.46, ease: "power4.out" }, 14.16);
+        tl.from(".label-proof", { y: 26, opacity: 0, duration: 0.45, ease: "sine.out" }, 14.48);
+        tl.to(".proof-pack", { y: -18, rotation: -1.2, duration: 2.7, ease: "sine.inOut" }, 15.05);
+
+        // Orientação: foco e checklist editorial.
+        tl.from("#scene-guidance", { opacity: 0, filter: "blur(24px)", duration: 0.72, ease: "power1.inOut" }, 18.1);
+        tl.from(".guide-pack", { x: 160, y: -40, rotation: 6, opacity: 0, duration: 0.92, ease: "power4.out" }, 18.24);
+        tl.from(".guide-eye", { x: -56, opacity: 0, duration: 0.50, ease: "expo.out" }, 18.32);
+        tl.from(".guide-title", { y: 66, opacity: 0, duration: 0.70, ease: "back.out(1.2)" }, 18.44);
+        tl.from(".guide-1", { x: -90, opacity: 0, duration: 0.58, ease: "power3.out" }, 19.12);
+        tl.from(".guide-2", { scale: 0.93, opacity: 0, duration: 0.58, ease: "back.out(1.15)" }, 19.42);
+        tl.from(".guide-3", { x: 90, opacity: 0, duration: 0.58, ease: "power4.out" }, 19.72);
+        tl.from(".guidance-note", { y: 28, opacity: 0, duration: 0.48, ease: "sine.out" }, 20.04);
+        tl.to(".guidance-orb", { scale: 1.12, x: 42, duration: 3.0, ease: "sine.inOut" }, 20.82);
+
+        // CTA: iris roxa, produto e ação.
+        tl.from("#scene-cta", { clipPath: "circle(0% at 50% 48%)", duration: 0.62, ease: "power3.inOut" }, 24.2);
+        tl.from("#scene-cta .halo", { scale: 0.48, opacity: 0, duration: 0.92, ease: "power2.out" }, 24.22);
+        tl.from(".cta-pack", { y: 170, scale: 0.76, rotation: -5, opacity: 0, duration: 1.08, ease: "back.out(1.25)" }, 24.24);
+        tl.from(".cta-brand", { y: -45, opacity: 0, duration: 0.54, ease: "power3.out" }, 24.26);
+        tl.from(".cta-title", { scale: 0.92, opacity: 0, duration: 0.72, ease: "expo.out" }, 24.34);
+        tl.from(".cta-fruit", { x: 150, rotation: 80, scale: 0.45, opacity: 0, duration: 0.88, ease: "back.out(1.35)" }, 25.10);
+        tl.from(".cta-leaf", { x: -130, rotation: -80, opacity: 0, duration: 0.78, ease: "power2.out" }, 25.24);
+        tl.from(".cta-button", { y: 80, scale: 0.90, opacity: 0, duration: 0.72, ease: "back.out(1.32)" }, 26.02);
+        tl.from(".cta-zone .micro", { y: 28, opacity: 0, duration: 0.46, ease: "sine.out" }, 26.45);
+        tl.to(".cta-button", { scale: 1.035, duration: 0.52, repeat: 3, yoyo: true, ease: "sine.inOut" }, 27.02);
+        tl.to("#scene-cta", { opacity: 0, duration: 0.62, ease: "sine.in" }, 29.38);
+
+        window.__timelines["meno-care-ad"] = tl;
+      </script>
+    </div>
+  </body>
+</html>
