@@ -1,0 +1,33 @@
+{
+  "repository": "phpessoal17-sudo/GPT-astra-edi-ao-de-video-",
+  "path": "projects/criativo-sal-amargo-dna-v9",
+  "video": {
+    "filename": "sal-amargo-criativo.mp4",
+    "bytes": 1395324,
+    "git_blob_sha1": "38e315d772bc6f54f7bc1b5e06231d7d14d352fa",
+    "sha256": "c673357fc6bf8090576d3abe75fa246f5f462e70c6e6aadd2124e594a7b90962",
+    "duration_seconds": 15,
+    "width": 720,
+    "height": 1280,
+    "fps": 30
+  },
+  "editable_project": {
+    "filename": "criativo-sal-amargo-editavel.zip",
+    "bytes": 8588839,
+    "files": 35,
+    "retained_original_files": 33,
+    "omitted": [
+      "criativo-sal-amargo/assets/mix_master.wav",
+      "criativo-sal-amargo/assets/mix_raw.wav"
+    ],
+    "all_retained_payloads_identical": true,
+    "zip_structure_verified": true,
+    "git_blob_sha1": "67e5c0b098dbccda517ecd50a001c0713df7f4fd"
+  },
+  "original_full_archive": {
+    "bytes": 19212834,
+    "sha256": "3ee66ec082ab2e262bd41b81f9cf8afd52572792f7593ef179c0f6604688901c",
+    "published": false,
+    "reason": "Exceeds connector request limit when base64 encoded"
+  }
+}
