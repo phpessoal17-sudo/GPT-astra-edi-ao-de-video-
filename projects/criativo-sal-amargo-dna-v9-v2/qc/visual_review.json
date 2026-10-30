@@ -1,0 +1,38 @@
+{
+  "export": "sal-amargo-v2.mp4",
+  "uniform_frame_sheets_reviewed": [
+    "encoded-contact-00.jpg",
+    "encoded-contact-02.jpg",
+    "encoded-contact-04.jpg",
+    "encoded-contact-06.jpg"
+  ],
+  "uniform_frames_reviewed": 48,
+  "boundary_frame_sheets_reviewed": [
+    "boundary-contact-00.jpg",
+    "boundary-contact-01.jpg",
+    "boundary-contact-02.jpg",
+    "boundary-contact-03.jpg",
+    "boundary-contact-04.jpg",
+    "boundary-contact-05.jpg",
+    "boundary-contact-06.jpg",
+    "boundary-contact-07.jpg"
+  ],
+  "boundary_frames_reviewed": 62,
+  "native_key_frames_reviewed": 3,
+  "ui_masks_reviewed": [
+    "ui-fallback-19.jpg",
+    "ui-fallback-85.jpg"
+  ],
+  "main_text": "readable in inspected frames; transition field is below text layer",
+  "no_full_motion_playback_claim": true,
+  "listening_review": "not_performed",
+  "product_identity": "main brand/name/form compared; microtext uncertainty remains",
+  "scene_duration_mean_s": 1.875,
+  "scene_duration_median_s": 1.8850000000000007,
+  "scene_duration_range_s": [
+    1.05,
+    2.6000000000000014
+  ],
+  "scene_count": 16,
+  "retention_with_audience": "not tested"
+}

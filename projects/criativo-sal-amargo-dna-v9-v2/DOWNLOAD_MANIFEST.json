@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "video": {
+    "path": "sal-amargo-v2.mp4",
+    "bytes": 9231801,
+    "sha256": "1712e730244a1157789ee587d72923a7aa4e47ee0c6d5d06265c86e69faea135",
+    "git_blob_sha1": "93859e137bfed25c236069ab79e4c139bfd9ec61"
+  },
+  "project": {
+    "path": "criativo-sal-amargo-v2-editavel.zip",
+    "bytes": 9636958,
+    "sha256": "69e6fcf9ab327a376f4c8ad00d74e31c59fe74131334e9d34d65c5c72ac6ee27",
+    "git_blob_sha1": "20e56ef384e816c64cb4dceff5037c0d14625b70",
+    "crc_check": "passed",
+    "reconstruction_test": "passed"
+  },
+  "voice_new_elevenlabs": false,
+  "explicit_destination_confirmation": {
+    "date": "2026-10-30",
+    "user_response": "sim",
+    "repository": "phpessoal17-sudo/GPT-astra-edi-ao-de-video-",
+    "visibility": "public",
+    "scope": "current video and editable ZIP including audio and images"
+  }
+}

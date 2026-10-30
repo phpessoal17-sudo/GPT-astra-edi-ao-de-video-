@@ -1,0 +1,48 @@
+{
+  "native_decoded_frames": 900,
+  "cfr_30": "passed",
+  "duration_video_s": 30.0,
+  "duration_audio_s": 30.016,
+  "max_frame_pts_error_s": 3.3333333604446125e-07,
+  "full_decode": "passed",
+  "encoded_audio_voice_correlation": [
+    {
+      "window_s": [
+        0,
+        6
+      ],
+      "lag_samples": 0,
+      "lag_ms": 0.0
+    },
+    {
+      "window_s": [
+        22,
+        28
+      ],
+      "lag_samples": 0,
+      "lag_ms": 0.0
+    }
+  ],
+  "audio_lag_difference_samples": 0,
+  "min_native_luma_mean": 84.6837,
+  "sampled_encoded_frames": 90,
+  "extracted_boundary_frames": 62,
+  "listening_review": "not_performed",
+  "motion_playback_review": "not_performed",
+  "phrase_sync": "approximate; no word-level approval",
+  "product_microtext": "unverified where unreadable in original",
+  "actual_video_sha256": "1712e730244a1157789ee587d72923a7aa4e47ee0c6d5d06265c86e69faea135",
+  "technical_note": "Correlation measures audio-bus alignment; it does not validate semantic caption timing.",
+  "source_checks": {
+    "timeline_partition": "passed",
+    "random_access_determinism": "passed",
+    "scene_boundary_frames": "passed",
+    "original_assets_hashes": "passed",
+    "speech_elapsed_time_preserved": "passed",
+    "speech_speed": 1,
+    "voice_pcm_error_max": 5.960464477539063e-08,
+    "voice_source_duration_s": 28.964666666666666,
+    "phrase_alignment": "approximate; not independently verified word by word",
+    "listening_review": "not_performed"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "language": "pt-BR",
+  "product": "Sal Amargo em cápsulas, Unilife Vitamins",
+  "format": {"width_px": 1080, "height_px": 1920, "fps": "30/1", "duration_s": 30},
+  "objective": "Revisar o criativo com voz como relógio mestre, mudanças de cenário por ideia, produto de maior definição e motion graphics com profundidade",
+  "style": {
+    "primary_dna": "style/v9.json",
+    "source_features": ["verde/cinza claro", "contraste sans/serif itálica", "packshot em camadas", "faixas verdes", "entrada vertical medida"],
+    "user_requested_extensions": ["contrapontos verde-escuros", "geometria 3D de cenário", "imagens de apoio animadas", "mais estados visuais sincronizados à fala"],
+    "palette": {"cream": "#f0f0e8", "sage": "#dce7df", "ink": "#122e27", "accent": "#069877", "dark": "#073c30", "light": "#f9fbf4"}
+  },
+  "voice": {
+    "source": "assets/audio/narration-original.wav",
+    "origin": "narração já existente no repositório do usuário, projeto sal-amargo-unilife-ad",
+    "provider": "não comprovado",
+    "new_elevenlabs_generation": false,
+    "elevenlabs_attempt": "fila gratuita ocupada; geração não iniciada; sem cobrança",
+    "speed": 1.0,
+    "timing": "âncoras de frases da transcrição anterior; subdivisões aproximadas apoiadas em pausas medidas; sem karaoke"
+  },
+  "audio": {"sample_rate_hz": 48000, "seed": 20261030, "bpm": 112, "target_lufs": -16, "max_true_peak_dbtp": -1.5, "music_duck_db": -9},
+  "product_image": {
+    "source": "assets/images/product-hd-reference.png",
+    "size_px": [1254,1254],
+    "provenance": "aprimoramento por IA já existente no repositório do usuário; não fotografia oficial",
+    "limits": "marca, nome e elementos principais comparados; identidade integral dos microtextos não comprovável a partir da foto original 240px",
+    "new_imagegen_attempt": "rejeitada: mutação na área de quantidade"
+  },
+  "broll": {"type": "fotografias geradas anteriormente animadas por código; não filmagens", "reuse": "ativos do repositório do usuário, mesmo produto"},
+  "review": {"listening_review": "not_performed", "platform_safe_area": "fallback editorial conservador, não template oficial"}
+}

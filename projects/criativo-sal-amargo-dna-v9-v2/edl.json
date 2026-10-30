@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.1.0",
+  "units": "seconds",
+  "fps": "30/1",
+  "frame_index": "zero_based",
+  "intervals": "half_open",
+  "audio_clock": "native source at 1x; resampled to 48000 Hz",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "kind": "opening",
+      "start_s": 0,
+      "end_s": 1.05,
+      "start_frame": 0,
+      "end_frame": 32,
+      "visual": "macro inclinado + tipografia grande",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-02",
+      "kind": "choices",
+      "start_s": 1.05,
+      "end_s": 2.3,
+      "start_frame": 32,
+      "end_frame": 69,
+      "visual": "repetição tipográfica e três planos do mesmo frasco",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-03",
+      "kind": "lifestyle",
+      "start_s": 2.3,
+      "end_s": 3.76,
+      "start_frame": 69,
+      "end_frame": 113,
+      "visual": "imagem de apoio em cartão com paralaxe",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-04",
+      "kind": "orbit",
+      "start_s": 3.76,
+      "end_s": 5.5,
+      "start_frame": 113,
+      "end_frame": 165,
+      "visual": "cena verde-escura, órbita 3D e produto",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "motivated_green_wipe",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-05",
+      "kind": "hero",
+      "start_s": 5.5,
+      "end_s": 7.9,
+      "start_frame": 165,
+      "end_frame": 237,
+      "visual": "revelação do frasco inteiro em estúdio claro",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "motivated_green_wipe",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-06",
+      "kind": "macro",
+      "start_s": 7.9,
+      "end_s": 10.12,
+      "start_frame": 237,
+      "end_frame": 304,
+      "visual": "aproximação frontal do rótulo",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-07",
+      "kind": "botanical",
+      "start_s": 10.12,
+      "end_s": 12.7,
+      "start_frame": 304,
+      "end_frame": 381,
+      "visual": "folhagem de imagem de apoio e frasco em primeiro plano",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-08",
+      "kind": "label",
+      "start_s": 12.7,
+      "end_s": 14.4,
+      "start_frame": 381,
+      "end_frame": 432,
+      "visual": "máscara circular revela detalhe da frente",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "motivated_green_wipe",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-09",
+      "kind": "pedestal",
+      "start_s": 14.4,
+      "end_s": 16.65,
+      "start_frame": 432,
+      "end_frame": 499,
+      "visual": "plinto geométrico com torus 3D",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "motivated_green_wipe",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-10",
+      "kind": "usage",
+      "start_s": 16.65,
+      "end_s": 18.68,
+      "start_frame": 499,
+      "end_frame": 560,
+      "visual": "passagem clara, recorte do rótulo e órbita lateral",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-11",
+      "kind": "advisory",
+      "start_s": 18.68,
+      "end_s": 21.28,
+      "start_frame": 560,
+      "end_frame": 638,
+      "visual": "produto estável, profundidade e respiro legível",
+      "trigger": "fala existente; âncora ASR por frase",
+      "transition": "hard",
+      "confidence": 0.78
+    },
+    {
+      "id": "scene-12",
+      "kind": "composition",
+      "start_s": 21.28,
+      "end_s": 22.91,
+      "start_frame": 638,
+      "end_frame": 687,
+      "visual": "cartão macro frontal; sem verso inventado",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-13",
+      "kind": "warnings",
+      "start_s": 22.91,
+      "end_s": 24.32,
+      "start_frame": 687,
+      "end_frame": 730,
+      "visual": "fundo escuro e relevo tipográfico",
+      "trigger": "subdivisão aproximada apoiada em pausa/âncora ASR",
+      "transition": "hard",
+      "confidence": 0.55
+    },
+    {
+      "id": "scene-14",
+      "kind": "brand",
+      "start_s": 24.32,
+      "end_s": 25.64,
+      "start_frame": 730,
+      "end_frame": 769,
+      "visual": "retorno do hero com fita verde",
+      "trigger": "fala existente; âncora ASR por frase",
+      "transition": "motivated_green_wipe",
+      "confidence": 0.78
+    },
+    {
+      "id": "scene-15",
+      "kind": "clarity",
+      "start_s": 25.64,
+      "end_s": 27.82,
+      "start_frame": 769,
+      "end_frame": 835,
+      "visual": "contexto em cartão e produto alinhado à frente",
+      "trigger": "fala existente; âncora ASR por frase",
+      "transition": "hard",
+      "confidence": 0.78
+    },
+    {
+      "id": "scene-16",
+      "kind": "cta",
+      "start_s": 27.82,
+      "end_s": 30.0,
+      "start_frame": 835,
+      "end_frame": 900,
+      "visual": "frasco nítido e CTA sustentado até o fim",
+      "trigger": "fala existente; âncora ASR por frase",
+      "transition": "motivated_green_wipe",
+      "confidence": 0.78
+    }
+  ],
+  "source_mappings": [
+    {
+      "asset": "narration-original.wav",
+      "source_in_s": 0,
+      "source_out_s": 28.9646666667,
+      "sequence_start_s": 0,
+      "speed": 1.0
+    }
+  ],
+  "proposed_extensions_not_reference_evidence": [
+    "dark_green_studio",
+    "3d_torus",
+    "procedural_plinth",
+    "image_motion_broll"
+  ]
+}

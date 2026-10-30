@@ -1,0 +1,12 @@
+{
+  "timeline_partition": "passed",
+  "random_access_determinism": "passed",
+  "scene_boundary_frames": "passed",
+  "original_assets_hashes": "passed",
+  "speech_elapsed_time_preserved": "passed",
+  "speech_speed": 1,
+  "voice_pcm_error_max": 5.960464477539063e-08,
+  "voice_source_duration_s": 28.964666666666666,
+  "phrase_alignment": "approximate; not independently verified word by word",
+  "listening_review": "not_performed"
+}
